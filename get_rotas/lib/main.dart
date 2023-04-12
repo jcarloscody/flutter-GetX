@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get_rotas/middlewares/page.dart';
 import 'package:get_rotas/middlewares/rotMiddlw.dart';
 import 'package:get_rotas/navegacao_homePage.dart';
+import 'package:get_rotas/nested_navegation/nested_page_home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -46,6 +47,13 @@ class MyApp extends StatelessWidget {
             RotMiddlw(priority: 1),
           ],
           page: () => PageMiddleware(),
+        ),
+        GetPage(
+          name: '/nested',
+          middlewares: [
+            RotMiddlw(priority: 1),
+          ],
+          page: () => NestedPageHome(),
         )
       ],
       unknownRoute: GetPage(

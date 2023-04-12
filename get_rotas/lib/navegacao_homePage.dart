@@ -72,7 +72,7 @@ class NavegacaoComumHomePage extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: () {
-             Get.to
+              Get.toNamed('/middleware');
             },
             child: const Text("Middlewares"),
           ),
