@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../navegacao_comum_homePage.dart';
+import '../../navegacao_homePage.dart';
 
 class BackHome extends StatelessWidget {
   const BackHome({Key? key}) : super(key: key);

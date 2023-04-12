@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_rotas/navegacao_comum/navegacao_comum_homePage.dart';
+import 'package:get_rotas/middlewares/page.dart';
+import 'package:get_rotas/middlewares/rotMiddlw.dart';
+import 'package:get_rotas/navegacao_homePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,6 +40,13 @@ class MyApp extends StatelessWidget {
           name: '/queryParam',
           page: () => Container(),
         ),
+        GetPage(
+          name: '/middleware',
+          middlewares: [
+            RotMiddlw(priority: 1),
+          ],
+          page: () => PageMiddleware(),
+        )
       ],
       unknownRoute: GetPage(
         name: '/404',

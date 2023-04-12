@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_rotas/navegacao_comum/navegacao_comum_homePage.dart';
+import 'package:get_rotas/navegacao_homePage.dart';
 
 class ToHome extends StatelessWidget {
   const ToHome({Key? key}) : super(key: key);

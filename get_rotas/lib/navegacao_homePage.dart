@@ -70,6 +70,12 @@ class NavegacaoComumHomePage extends StatelessWidget {
             },
             child: const Text("Query param"),
           ),
+          ElevatedButton(
+            onPressed: () {
+             Get.to
+            },
+            child: const Text("Middlewares"),
+          ),
         ],
       )),
     );
