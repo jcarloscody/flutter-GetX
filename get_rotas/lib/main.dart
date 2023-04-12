@@ -16,6 +16,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      routingCallback: (value) {
+        //observa as rotas
+        debugPrint(value?.current);
+        debugPrint(value?.previous);
+      },
       home: const NavegacaoComumHomePage(),
       initialRoute: '/home',
       getPages: [
